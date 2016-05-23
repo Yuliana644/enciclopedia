@@ -1,0 +1,61 @@
+body
+{
+    background-color: black;
+    font-family:  Arial;
+    font-style: bold;
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+canvas
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/stars.jpg");
+    background-size: cover;
+}
+
+#titulo
+{
+    position: absolute;
+    top: 10px;
+    margin-left: 30%;
+    z-index: 20;
+    font-size: 1em;
+    padding: 10px;
+}
+
+#next{
+    position: absolute;
+    bottom: 100px;
+    left: 400px;
+    z-index: 25;
+    font-size: 0.8em;
+}
+#prev{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    z-index: 25;
+    font-size: 0.8em;
+}
+
+div
+{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+h3{
+  font-size: 0.8em;
+}

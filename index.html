@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto Planetas</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/estilos.css">
+</head>
+<body>
+    <div id="titulo">Tamaño de los Planteas en relación a Júpiter</div>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src = "js/three.js"></script>
+	<script src = "js/script.js"></script>
+
+	<script type="text/javascript">
+		function lee() {
+            $.getJSON("json/m.json", function(datos) {
+                console.log("Dato: " + datos["dato"]);
+                $.each(datos["primos"], function(idx,primo) {
+                    console.log("Numero primo: " + primo);
+                });
+            });
+        }
+	</script>
+
+	<input type="Button" value="Siguiente" onclick="lee()" id="next"></input>
+	<input type="Button" value="Anterior" onclick="script.js:movcamar(-10)" id="prev"></input>
+</body>
+</html>
